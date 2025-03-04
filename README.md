@@ -42,13 +42,14 @@ Alternatifnya, Anda bisa mengetik `chrome://extensions` di address bar dan tekan
 ### 5. Aktifkan "Developer mode"
 Di halaman Extensions, aktifkan opsi **Developer mode** yang ada di pojok kanan atas.
 
-### 6. Muat Ekstensi Unpacked
-- Klik tombol **Load unpacked**.
-- Pilih folder yang berisi file ekstensi crx (extension-tiktok-hatespeech-detector-v1.crx).
-- Setelah memilih folder, ekstensi akan langsung dimuat dan ditambahkan ke daftar ekstensi yang aktif di browser Anda.
+### 6. Muat Ekstensi 
+- Buka folder clone kembali
+- Lalu pilih folder yang berisi file ekstensi crx (extension-tiktok-hatespeech-detector-v1.crx).
+- Setelah memilih folder, drag file ekstensi (extension-tiktok-hatespeech-detector-v1.crx) ke `chrome://extensions` yang sudah diaktifkan mode developernya
+- maka extension akan langsung dimuat dan muncul popup add "TikTok Hate Speech Detector Extension V1.0" klik  **Add extension** tambahkan ke daftar ekstensi yang aktif di browser Anda.
 
 ### 7. Menjalankan API
-Setelah semuanya terinstal, jalankan API (api-extension-hatespeech-detector-v1) menggunakan Uvicorn dengan perintah berikut:
+Setelah semuanya terinstal, jalankan API (api-extension-hatespeech-detector-v1) di terminalnya dengan menggunakan Uvicorn dengan perintah berikut:
 ```bash
 uvicorn app:app --reload
 ```
